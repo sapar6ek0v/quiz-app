@@ -2,38 +2,46 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Demo 
+## Demo
 
-Open in browser to view [url](https://quiz-app-nine-sable.vercel.app/).
+You can see demo in browser [url](https://quiz-app-nine-sable.vercel.app/)
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+```bash
+npm install
+```
 
-### `npm start`
+## Running the app
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+# development
+$ npm start
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# production mode
+$ npm run build
+```
 
-### `npm test`
+## Test
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+# tests
+$ npm run test
 
-### `npm run build`
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I used Open Trivia DB.
+You can find all the necessary materials here [Open Trivia DB](https://opentdb.com/api_config.php).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Eject
 
-### `npm run eject`
+```bash
+# eject
+$ npm run eject
+
+```
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
