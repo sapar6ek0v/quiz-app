@@ -1,6 +1,6 @@
-import React from 'react';
-import {AnswerObject} from "../App";
-import {ButtonWrapper, Wrapper} from "./QuizCard.styled";
+import { FC } from 'react';
+import { AnswerObject } from '../../App';
+import { ButtonStack, ButtonWrapper, QuestionNumberTitle, QuestionTitle, Wrapper } from './styles';
 
 type Props = {
     question: string,
@@ -8,39 +8,33 @@ type Props = {
     callback: (e: React.MouseEvent<HTMLButtonElement>) => void,
     userAnswer: AnswerObject | undefined,
     totalQuestions: number,
-    questionNr: number
-}
+    questionNr: number,
+};
 
-const QuizCard: React.FC<Props> = (
-    {
-        question,
-        answers,
-        questionNr,
-        totalQuestions,
-        callback,
-        userAnswer
-    }) => {
+const QuizCard: FC<Props> = ({
+    question, answers, questionNr, totalQuestions, callback, userAnswer
+}) => {
 
 
     return (
         <Wrapper>
-            <p className='number'>{totalQuestions} / {questionNr}</p>
-            <p dangerouslySetInnerHTML={{__html: question}} />
-            <div>
+            <QuestionNumberTitle>{totalQuestions} / {questionNr}</QuestionNumberTitle>
+            <QuestionTitle dangerouslySetInnerHTML={{ __html: question }} />
+            <ButtonStack>
                 {
                     answers.map((answer, idx) => (
                         <ButtonWrapper
                             key={idx}
-                            correct={userAnswer?.correctAnswer === answer }
+                            correct={userAnswer?.correctAnswer === answer}
                             userClicked={userAnswer?.answer === answer}
                         >
                             <button disabled={!!userAnswer} value={answer} onClick={callback}>
-                                <span dangerouslySetInnerHTML={{__html: answer}}/>
+                                <span dangerouslySetInnerHTML={{ __html: answer }} />
                             </button>
                         </ButtonWrapper>
                     ))
                 }
-            </div>
+            </ButtonStack>
         </Wrapper>
     );
 };
