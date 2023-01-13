@@ -36,14 +36,6 @@ A simple game consisting of 10 questions (any questions) with three difficulty l
 
 <img src="public/assets/images/quiz_app_start_over.png" width="800" alt="Start over" />
 
-- Tv Show types
-
-<img src="public/assets/images/tv_shows_types.png" width="800" alt="tv show types" />
-
-- Tv Show details page
-
-<img src="public/assets/images/tv_shows_details_page.png" width="800" alt="tv show details page" />
-
 ## Getting Started
 
 ### Installation
