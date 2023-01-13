@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 import QuizCard from './components/QuizCard';
-import { Difficulty, getAPIQuestions, QuestionState } from './API';
+import { Difficulty, getAPIQuestions, QuestionState } from './helpers/API';
 import { GlobalStyles, Button, Wrapper, Title, ScoreTitle, LoadingTitle, Group } from './styles';
 import Select from './components/Select';
 

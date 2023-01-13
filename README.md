@@ -1,58 +1,77 @@
-# Getting Started with Create React App
+# Quiz App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple game consisting of 10 questions (any questions) with three difficulty levels(With Open Trivia DB).
+
+---
+
+## Built With
+
+**Client:** React, TS, styled-components.
+
+**API:** [Open Trivia DB](https://opentdb.com/)
+
+## Features
+
+- 10 questions from different topics.
+- 3 levels of difficulty.
+- Scores.
 
 ## Demo
 
-You can see demo in browser [url](https://quiz-app-nine-sable.vercel.app/)
+[Demo](https://quiz-app-nine-sable.vercel.app/)
 
-## Installation
+## How To Use
 
-```bash
-npm install
-```
+### Main Page
 
-## Running the app
+- Main page where you choose the difficulty level and you can start the game. After Game started you can`t choose level again.
 
-```bash
-# development
-$ npm start
+<img src="public/assets/images/quiz_app_main.png" width="800" alt="Quiz App page" />
 
-# production mode
-$ npm run build
-```
+- If you clicked wrong answer, it turns red. If you clicked correct answer, it turns green. And also you can see your points.
 
-## Test
+<img src="public/assets/images/quiz_app_explanation.png" width="800" alt="Explanation" />
 
-```bash
-# tests
-$ npm run test
+- When you answer the last question, you will start the game again. You can select the level again and start the game.
 
-```
+<img src="public/assets/images/quiz_app_start_over.png" width="800" alt="Start over" />
 
-## API
+- Tv Show types
 
-I used Open Trivia DB.
-You can find all the necessary materials here [Open Trivia DB](https://opentdb.com/api_config.php).
+<img src="public/assets/images/tv_shows_types.png" width="800" alt="tv show types" />
 
-## Eject
+- Tv Show details page
 
-```bash
-# eject
-$ npm run eject
+<img src="public/assets/images/tv_shows_details_page.png" width="800" alt="tv show details page" />
 
-```
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Installation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. To run a project locally, first clone the repo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   ```sh
+   git clone https://github.com/sapar6ek0v/quiz-app.git
+   ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. Go to the project directory
 
-## Learn More
+   ```sh
+   cd quiz-app
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Install all packages
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```sh
+   npm install
+   ```
+
+4. Run the project
+
+   ```sh
+   npm start
+   ```
+
+## Feedback
+
+If you have any feedback, please reach out to me at eldiiarsparbekov03@gmail.com

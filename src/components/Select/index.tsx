@@ -1,5 +1,6 @@
 import { Dispatch, FC, SetStateAction, useState } from 'react';
-import { Difficulty } from '../../API';
+
+import { Difficulty } from '../../helpers/API';
 import { Wrapper, List, SelectWrapper, Item } from './styles';
 
 type Props = {
